@@ -256,14 +256,6 @@
     .step h3 { margin: 1px 0 6px; color: var(--navy); font-size: 19px; }
     .step p { margin: 0; color: var(--muted); font-size: 14px; }
 
-    .faq-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 65px; }
-    details { border-top: 1px solid var(--line); }
-    details:last-child { border-bottom: 1px solid var(--line); }
-    summary { cursor: pointer; padding: 20px 0; color: var(--navy); font-weight: 750; list-style: none; display: flex; justify-content: space-between; gap: 20px; }
-    summary::after { content: "+"; color: var(--blue); font-size: 20px; }
-    details[open] summary::after { content: "−"; }
-    details p { margin: -4px 0 20px; color: var(--muted); font-size: 14px; }
-
     .article-strip { background: var(--surface); }
     .article-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
     .article-card {
@@ -292,11 +284,6 @@
     .article-body p { margin: 0 0 16px; color: var(--muted); font-size: 13px; flex: 1; }
     .article-body a { align-self: flex-start; color: var(--blue); font-weight: 750; font-size: 13px; }
     .article-cta { text-align: center; margin-top: 34px; }
-    details:last-child { border-bottom: 1px solid var(--line); }
-    summary { cursor: pointer; padding: 20px 0; color: var(--navy); font-weight: 750; list-style: none; display: flex; justify-content: space-between; gap: 20px; }
-    summary::after { content: "+"; color: var(--blue); font-size: 20px; }
-    details[open] summary::after { content: "−"; }
-    details p { margin: -4px 0 20px; color: var(--muted); font-size: 14px; }
 
     .cta { padding-top: 0; }
     .cta-box {
@@ -340,7 +327,7 @@
       .menu-btn { display: block; }
       .nav-links { display: none; position: absolute; top: 78px; left: 0; right: 0; padding: 22px 20px; flex-direction: column; align-items: stretch; background: white; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); }
       .nav-links.open { display: flex; }
-      .hero-grid, .process-grid, .faq-grid { grid-template-columns: 1fr; }
+      .hero-grid, .process-grid { grid-template-columns: 1fr; }
       .hero-grid { gap: 40px; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .trust-grid { grid-template-columns: 1fr 1fr; }
@@ -373,7 +360,7 @@ body>header .brand{color:var(--navy)}.brand-mark{min-width:44px;height:44px;padd
 .has-dropdown{position:relative}.has-dropdown>.drop-toggle{display:inline-flex;align-items:center;gap:6px;cursor:pointer;background:none;border:0;font:inherit;color:inherit;padding:0}.has-dropdown>.drop-toggle:after{content:"▾";font-size:11px;transition:transform .18s ease}.has-dropdown.open>.drop-toggle:after{transform:rotate(180deg)}
 .dropdown-menu{position:absolute;top:calc(100% + 16px);left:0;min-width:260px;display:none;flex-direction:column;padding:8px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);z-index:30}.has-dropdown.open .dropdown-menu{display:flex}.dropdown-menu a{padding:11px 14px;border-radius:7px;font-size:14px;color:var(--navy)}.dropdown-menu a:hover{background:var(--surface);color:var(--blue)}
 .btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:7px;padding:0 20px;font-weight:750;font-size:14px;cursor:pointer;transition:.2s ease}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#fff;background:var(--blue);box-shadow:0 10px 24px rgba(13,110,253,.22)}
-body>footer{padding:60px 0 24px;color:#b9cbd8;background:#061a2c}body>footer .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:42px}body>footer .brand,body>footer h4{color:#fff}body>footer .brand-tagline{color:#9fb7c8}body>footer h4{margin-top:4px}body>footer p,body>footer a{font-size:13px}body>footer a{display:block;margin:9px 0}body>footer a:hover{color:#fff}body>footer .copyright{margin-top:45px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:12px}
+body>footer{padding:60px 0 24px;color:#b9cbd8;background:#061a2c}body>footer .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:42px}body>footer .brand,body>footer h4{color:#fff}body>footer .brand-tagline{color:#9fb7c8}body>footer h4{margin-top:4px}body>footer p,body>footer a{font-size:13px}body>footer a{display:block;margin:9px 0}body>footer a:hover{color:#fff}body>footer .copyright{margin-top:45px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:12px}body>footer .footer-desc{margin:14px 0 18px;max-width:280px;color:#b9cbd8;line-height:1.55}body>footer .footer-social{display:flex;gap:10px;margin-top:4px}body>footer .footer-social a{display:grid;place-items:center;width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.08);margin:0;font-size:11px;font-weight:800}body>footer .footer-social a:hover{background:rgba(255,255,255,.16)}
 @media(min-width:901px){.has-dropdown:hover .dropdown-menu,.has-dropdown:focus-within .dropdown-menu{display:flex}.has-dropdown:after{content:"";position:absolute;left:0;top:100%;width:100%;height:18px}}
 @media(max-width:900px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:78px;left:0;right:0;padding:22px 20px;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.nav-links.open{display:flex}.dropdown-menu{position:static;box-shadow:none;border:0;margin:4px 0 4px 14px;padding:0}.has-dropdown .dropdown-menu{display:none}.has-dropdown.open .dropdown-menu{display:flex}.footer-grid{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:620px){.container{width:min(100% - 28px,1160px)}body>footer .footer-grid{grid-template-columns:1fr}}
@@ -383,7 +370,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
 body{min-width:0;overflow-x:hidden}
 img,svg,video,iframe{max-width:100%;height:auto}
 button,a,input,select,textarea{min-width:0}
-main,section,.container,.hero-grid,.process-grid,.faq-grid,.layout,.grid{min-width:0}
+main,section,.container,.hero-grid,.process-grid,.layout,.grid{min-width:0}
 
 @media(max-width:900px){
   body>header .nav{min-height:70px}
@@ -398,7 +385,7 @@ main,section,.container,.hero-grid,.process-grid,.faq-grid,.layout,.grid{min-wid
   .has-dropdown{width:100%}.drop-toggle{justify-content:space-between}
   .dropdown-menu{width:100%;min-width:0!important;margin:0 0 6px 10px!important;padding:2px 0 2px 8px!important;border-left:2px solid var(--line)!important;border-radius:0!important}
   .dropdown-menu a{min-height:42px;display:flex;align-items:center;padding:9px 10px!important}
-  .hero-grid,.process-grid,.faq-grid,.layout{grid-template-columns:minmax(0,1fr)!important;gap:34px!important}
+  .hero-grid,.process-grid,.layout{grid-template-columns:minmax(0,1fr)!important;gap:34px!important}
   .consult-card,.price-box,.hero-panel,.side{width:100%;max-width:none}
   .services-grid,.article-grid,.grid,.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .process{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -462,10 +449,7 @@ main,section,.container,.hero-grid,.process-grid,.faq-grid,.layout,.grid{min-wid
         <a href="index.html">Beranda</a>
 <div class="has-dropdown">
 <button aria-expanded="false" class="drop-toggle" type="button">Layanan Kami</button>
-<div class="dropdown-menu">
-<a href="tax-services.html">Pajak</a>
-<a href="notaris-ppat.html">Notaris &amp; PPAT</a><a href="legal-advisory.html">Legal Advisory</a>
-</div>
+<div class="dropdown-menu"><a href="tax-services.html">Layanan Pajak &amp; Konsultasi</a><a href="legal-advisory.html">Layanan Legal</a><a href="notaris-ppat.html">Layanan Accounting</a></div>
 </div>
 <a href="artikel.html">Artikel</a>
 <a href="index.html#tentang">Tentang Kami</a>
@@ -626,21 +610,6 @@ main,section,.container,.hero-grid,.process-grid,.faq-grid,.layout,.grid{min-wid
 </div>
 </div>
 </section>
-<section id="faq">
-<div class="container faq-grid">
-<div class="section-head">
-<span class="eyebrow">Pertanyaan Umum</span>
-<h2>Hal yang sering ditanyakan.</h2>
-<p>Jawaban singkat untuk membantu Anda memahami layanan sebelum berkonsultasi.</p>
-</div>
-<div>
-<details open=""><summary>Siapa yang dapat menggunakan layanan ini?</summary><p>Layanan dapat disesuaikan untuk wajib pajak orang pribadi maupun badan usaha. Kebutuhan dan ruang lingkup ditentukan melalui konsultasi awal.</p></details>
-<details><summary>Dokumen apa saja yang perlu disiapkan?</summary><p>Daftar dokumen bergantung pada profil dan aktivitas Anda. Tim akan memberi daftar kebutuhan setelah memperoleh informasi awal.</p></details>
-<details><summary>Berapa lama proses pelaporan?</summary><p>Waktu pengerjaan mengikuti kelengkapan dokumen dan kompleksitas kasus. Estimasi akan disampaikan setelah peninjauan awal.</p></details>
-<details><summary>Apakah konsultasi awal berbayar?</summary><p>Konsultasi awal untuk memahami kebutuhan tersedia tanpa biaya. Pekerjaan lanjutan akan dimulai setelah ruang lingkup dan biaya disepakati.</p></details>
-</div>
-</div>
-</section>
 <section class="cta">
 <div class="container cta-box">
 <div><h2>Siap menyelesaikan kewajiban pajak Anda?</h2><p>Mulai dengan konsultasi singkat bersama tim kami.</p></div>
@@ -648,7 +617,7 @@ main,section,.container,.hero-grid,.process-grid,.faq-grid,.layout,.grid{min-wid
 </div>
 </section>
 </main>
-<footer id="kontak"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">JAP</span><span class="brand-text"><span class="brand-name">Jakarta Advisory Partner</span><span class="brand-tagline">Tax • Legal • Accounting</span></span></a></div><div><h4>Layanan</h4><a href="tax-services.html">Pajak</a><a href="notaris-ppat.html">Notaris &amp; PPAT</a><a href="legal-advisory.html">Legal Advisory</a></div><div><h4>Perusahaan</h4><a href="index.html#tentang">Tentang Kami</a><a href="artikel.html">Artikel</a><a href="faq.html">FAQ</a></div></div><div class="copyright">© <span id="year"></span> Jakarta Advisory Partner. Seluruh hak dilindungi.</div></div></footer>
+<footer id="kontak"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">JAP</span><span class="brand-text"><span class="brand-name">Jakarta Advisory Partner</span><span class="brand-tagline">Tax • Legal • Accounting</span></span></a><p class="footer-desc">One Stop Service Pelayanan Jasa Perpajakan, Layanan Legal &amp; Layanan Accounting Terpercaya</p><div class="footer-social" aria-label="Media sosial"><a href="https://wa.me/6285836002123" rel="noopener" target="_blank" aria-label="WhatsApp Jakarta Advisory Partner">WA</a><a href="#" aria-label="Threads Jakarta Advisory Partner">Th</a><a href="#" aria-label="LinkedIn Jakarta Advisory Partner">In</a></div></div><div><h4>Layanan</h4><a href="tax-services.html">Layanan Pajak &amp; Konsultasi</a><a href="legal-advisory.html">Layanan Legal</a><a href="notaris-ppat.html">Layanan Accounting</a></div><div><h4>Perusahaan</h4><a href="index.html#tentang">Tentang Kami</a><a href="artikel.html">Artikel</a><a href="faq.html">FAQ</a></div></div><div class="copyright">© <span id="year"></span> Jakarta Advisory Partner. Seluruh hak dilindungi.</div></div></footer>
 <div aria-live="polite" class="toast" role="status">Terima kasih. Permintaan konsultasi telah diterima.</div>
 <script>
     document.querySelectorAll('.has-dropdown > .drop-toggle').forEach(toggle => {
